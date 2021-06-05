@@ -2,9 +2,9 @@ const Web3 = require('web3');
 const BridgeEth = require('../build/contracts/BridgeEth.json');
 const BridgeBsc = require('../build/contracts/BridgeBsc.json');
 
-const web3Eth = new Web3('url to eth node (websocket)');
-const web3Bsc = new Web3('https://data-seed-prebsc-1-s1.binance.org:8545');
-const adminPrivKey = '';
+const web3Eth = new Web3('wss://rinkeby.infura.io/ws/v3/a84b538abf714818b3662cd1fcd7c530');
+const web3Bsc = new Web3('https://data-seed-prebsc-1-s1.binance.org:8545/');
+const adminPrivKey = 'e89d0ad57801311c10000df4052c6dd09a0599696a0a1c1d3e16518a04839e3c';
 const { address: admin } = web3Bsc.eth.accounts.wallet.add(adminPrivKey);
 
 const bridgeEth = new web3Eth.eth.Contract(
