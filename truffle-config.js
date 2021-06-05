@@ -1,5 +1,5 @@
 const HDWalletProvider = require('@truffle/hdwallet-provider');
-const mnemonic = '';
+const mnemonic = 'capital pony actor celery wing dumb pause diamond normal fortune sweet knee';
 /**
  * Use this file to configure your truffle project. It's seeded with some
  * common settings for different networks and features like migrations,
@@ -63,7 +63,7 @@ module.exports = {
     ethTestnet: {
       provider: () => new HDWalletProvider(
         mnemonic, 
-        'url to eth node',
+        'https://rinkeby.infura.io/v3/a84b538abf714818b3662cd1fcd7c530',
         0,
         1
       ),
